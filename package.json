@@ -1,0 +1,13 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "compile": "sass --watch src/scss:dist/css --style=compressed"
+  },
+  "author": "Vipin Mishra",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.26.10"
+  }
+}

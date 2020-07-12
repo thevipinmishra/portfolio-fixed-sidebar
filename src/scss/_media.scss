@@ -1,0 +1,70 @@
+@media (min-width: 992px) {
+  :root {
+    --gutter: 2rem;
+  }
+
+  main {
+    .section__heading {
+      margin-top: 0;
+    }
+  }
+
+  .site__wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  aside {
+    --width: 28%;
+    width: var(--width);
+    flex-basis: var(--width);
+    height: 100%;
+    position: relative;
+
+    .sidebar {
+      position: fixed;
+      height: 100%;
+      width: var(--width);
+    }
+  }
+
+  main {
+    --width: 72%;
+    width: var(--width);
+    flex-basis: var(--width);
+    height: 100%;
+  }
+
+  .stacks {
+    svg {
+      --size: 34px;
+    }
+  }
+
+  .projects__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+
+    .project__item + .project__item {
+      margin-top: 0;
+    }
+  }
+
+  .contact__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      flex-basis: 40%;
+      width: 40%;
+    }
+
+    .c__links {
+      flex-basis: 50%;
+      margin-top: 0;
+    }
+  }
+}
