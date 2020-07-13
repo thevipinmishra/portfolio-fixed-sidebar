@@ -217,7 +217,9 @@ main {
     box-shadow: var(--shadow-xs);
 
     .thumbnail {
-      height: 300px;
+      height: 250px;
+      overflow: hidden;
+      object-fit: cover;
       background-size: cover;
     }
 

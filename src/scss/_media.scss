@@ -1,3 +1,15 @@
+@media (min-width: 769px) {
+  .projects__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+
+    .project__item + .project__item {
+      margin-top: 0;
+    }
+  }
+}
+
 @media (min-width: 992px) {
   :root {
     --gutter: 2rem;
@@ -41,17 +53,6 @@
       --size: 34px;
     }
   }
-
-  .projects__grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr;
-
-    .project__item + .project__item {
-      margin-top: 0;
-    }
-  }
-
   .contact__details {
     display: flex;
     justify-content: space-between;
